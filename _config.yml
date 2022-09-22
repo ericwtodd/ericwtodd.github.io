@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Eric Todd/TITLE"
+title                    : "Eric Todd"
 title_separator          : "-"
 name                     : &name "Eric Todd"
 description              : &description "personal description"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Eric Todd"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : #"Your biography for the left-hand sidebar"
   location         : #"Location"
   employer         :
   pubmed           : 
