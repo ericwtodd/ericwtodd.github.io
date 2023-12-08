@@ -13,7 +13,7 @@ I am a second-year PhD student at Northeastern University advised by [David Bau]
 I am interested in understanding the internal representations of large neural networks, and how these machine-learned systems leverage their representations to perform different tasks.
 My research interests generally include machine learning, applications in computer vision, and natural language processing (NLP) - with an emphasis on interpretability.
 
-Prior to beginning my PhD, I studied Applied and Computational Mathematics (BS) and Computer Science (MS) at Brigham Young University (BYU).
+Prior to beginning my PhD, I studied Applied and Computational Mathematics (BS) at Brigham Young University (BYU).
 
 # News
 [October 2023] -- We released a new preprint! -- <br>
