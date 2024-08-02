@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Todd</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Academic Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+</head>
+
+<body>
+    <header class="top-strip">
+        <div class="top-container">
+        <nav class="top-nav">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="files/Curriculum_Vitae.pdf">CV</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <!-- Add more links as needed -->
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="sidebar">
+          <img src="images/eric_profile.jpg" alt="Eric Todd" class="profile-pic">
+          <div class="social-links">
+            <a href="mailto:todd.er@northeastern.edu"><i class="fas fa-envelope fa-lg"></i><span> Email</span></a>
+            <a href="https://twitter.com/ericwtodd" target="_blank"><i class="fab fa-fw fa-twitter-square"></i><span> Twitter</span></a>
+            <a href="https://github.com/ericwtodd" target="_blank"><i class="fab fa-github fa-lg"></i><span> Github</span></a>
+            <a href="https://www.linkedin.com/in/eric-w-todd/" target="_blank"><i class="fab fa-fw fa-linkedin"></i><span> LinkedIn</span></a>
+            <a href="https://scholar.google.com/citations?hl=en&user=o12WPZEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="ai ai-google-scholar" style="font-size:1.3rem"></i><span> Google Scholar</span></a>
+          </div>
+        </div>
+
+        <div class="main-content">
+          <section id="bio">
+            <h1>About Me</h1>
+            <p>Hi, my name is Eric Todd. I'm a rising third-year PhD student at Northeastern University advised by <a href="https://baulab.info/">Professor David Bau</a>. Prior to beginning my PhD, I studied <a href="https://acme.byu.edu">Applied and Computational Mathematics</a> at Brigham Young University (BYU).</p>
+            <p>I'm interested in understanding the learned structure of large neural networks, and how their internal representations enable their impressive generalization capabilities.</p>
+            <p>My research interests generally include machine learning and interpretability. I'm particularly excited by generative models and their applications in natural language processing (NLP) and computer vision.</p>
+          </section>
+
+          <hr>
+
+          <section id="news">
+            <h1>News</h1>
+            <!-- <div class="row">
+                <div class="col-md-3">August 2024</div>
+                <div class="col-md-9">Our <a href="https://arxiv.org/abs/2408.xxxx">causal interpretability survey</a> is out on arXiv. As interpretability researchers, we're still trying to understand the right level of abstraction for thinking about computation.</div>
+            </div> -->
+
+            <div class="row">
+                <div class="col-md-3">July 2024</div>
+                <div class="col-md-9">Our preprint about <a href="https://arxiv.org/abs/2407.14561">NNsight and NDIF</a> is out on arXiv. I'm excited about this framework for enabling access to the internal computations of large foundation models!</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">June 2024</div>
+                <div class="col-md-9">Reviewed for <a href="https://neurips.cc/Conferences/2024">Neurips Main Conference</a> and <a href="https://iclworkshop.github.io/">1st ICML Workshop on In-Context Learning.</a></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">May 2024</div>
+                <div class="col-md-9">Invited Talk on Function Vectors at the Princeton Neuroscience Institute.</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">May 2024</div>
+                <div class="col-md-9">Had a great time presenting our Function Vectors work at <a href="https://iclr.cc/Conferences/2024">ICLR 2024.</a></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">January 2024</div>
+                <div class="col-md-9">Our <a href="https://functions.baulab.info/">Function Vectors</a> paper was accepted to ICLR!</div>
+            </div>
+
+            <!-- <div class="row">
+                <div class="col-md-3"> October 2023</div>
+                <div class="col-md-9">We released a new preprint! -- <a href="https://functions.baulab.info/">Function Vectors in Large Language Models.</a>
+                    [<a href="https://arxiv.org/abs/2310.15213">arXiv</a>] [<a href="https://twitter.com/ericwtodd/status/1717277426873766104">Twitter</a>]
+                </div>
+            </div>      -->
+          </section>
+
+          <hr>
+
+          <section id="selected-publications">
+            <h1>Selected Publications</h1>
+            
+            <div class="citation">
+                <img src="images/papers/nnsight.png" alt="nnsight-paper">
+                <a href="https://arxiv.org/pdf/2407.14561">NNsight and NDIF: Democratizing Access to Foundation Model Internals.</a>
+                Jaden Fiotto-Kaufman, Alexander R. Loftus, <b>Eric Todd</b>, Jannik Brinkmann, Caden Juang, Koyena Pal, Can Rager, Aaron Mueller, Samuel Marks, Arnab Sen Sharma, Francesca Lucchetti, Michael Ripa, Adam Belfki, Nikhil Prakash, Sumeet Multani, Carla Brodley, Arjun Guha, Jonathan Bell, Byron C. Wallace, David Bau. 2024.
+                    <div class="button-container">
+                        <button class="abstract-toggle">Abstract</button>
+                        <a href="https://nnsight.net"><button>Project Website</button></a>
+                        <a href="https://arxiv.org/abs/2407.14561"><button>arXiv</button></a>
+                        <div class="abstract-container">
+                            <p> The enormous scale of state-of-the-art foundation models has limited their accessibility to scientists, 
+                                because customized experiments on large models require costly hardware and complex engineering that is impractical for most researchers. 
+                                To alleviate these problems, we introduce NNsight, an open-source Python package with a simple, flexible API 
+                                that can express interventions on any PyTorch model by building computation graphs. 
+                                We also introduce NDIF, a collaborative research platform providing researchers access to foundation-scale LLMs via the NNsight API. 
+                                Code, documentation, and tutorials are available at <a href="https://nnsight.net/">https://nnsight.net/</a>.</p>
+                        </div>
+                    </div>
+            </div>
+        
+            <div class="citation">
+                <img src="images/papers/fv-2.png" alt="fv-paper">
+                <a href="https://arxiv.org/pdf/2310.15213">Function Vectors in Large Language Models.</a><br>
+                <b>Eric Todd</b>, Millicent L. Li, Arnab Sen Sharma, Aaron Mueller, Byron C. Wallace, David Bau. <em>Proceedings of the 2024 International Conference on Learning Representations.</em> (ICLR 2024)
+                    <div class="button-container">
+                        <button class="abstract-toggle">Abstract</button>
+                        <a href="https://functions.baulab.info"><button>Project Website</button></a>
+                        <a href="https://arxiv.org/abs/2310.15213"><button>arXiv</button></a>
+                        <a href="https://openreview.net/forum?id=AwyxtyMwaG"><button>OpenReview</button></a>
+                        <div class="abstract-container">
+                            <p>We report the presence of a simple neural mechanism that represents an input-output function as a vector 
+                                within autoregressive transformer language models (LMs). Using causal mediation analysis on a diverse range 
+                                of in-context-learning (ICL) tasks, we find that a small number attention heads transport a compact representation of the demonstrated task, which we call a function vector (FV). FVs are robust to changes in context, i.e., 
+                                they trigger execution of the task on inputs such as zero-shot and natural text settings that do not resemble the ICL contexts 
+                                from which they are collected. We test FVs across a range of tasks, models, and layers and find strong causal effects across settings in middle layers.
+                                We investigate the internal structure of FVs and find while that they often contain information that encodes the output space of the function, 
+                                this information alone is not sufficient to reconstruct an FV. Finally, we test semantic vector composition in FVs,
+                                and find that to some extent they can be summed to create vectors that trigger new complex tasks. Our findings show that compact, 
+                                causal internal vector representations of function abstractions can be explicitly extracted from LLMs.</p>
+                        </div>
+                    </div>
+            </div> 
+          </section>
+
+          <hr>
+          <footer>
+              <p class="copyright">&copy; 2024 Eric Todd. All rights reserved. Last updated on August 2, 2024.</p>
+          </footer>
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
+
+
+
+

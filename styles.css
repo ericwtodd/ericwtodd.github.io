@@ -1,0 +1,234 @@
+a, a:visited {
+    color: #3096d5;
+    text-decoration: none;
+}
+
+/* Hover effects for general links */
+a:hover {
+    color: #2d36bb; 
+    border-bottom: 1px solid #2d36bb; /* This creates an underline effect on hover */
+}
+
+.abstract {
+    display: none;
+}
+
+
+.abstract.show {
+    display: block;
+}
+
+.center_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 30px;
+  }
+  
+figcaption {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+
+
+.citation:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+
+.button-container {
+    margin-top: 10px;
+    position: relative;
+}
+
+.abstract {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+
+.abstract-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    display: flex;    
+}
+
+
+  
+.abstract-container.show {
+    max-height: 500px; /* Adjust this value based on your needs */
+    transition: max-height 0.5s ease-in;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans, sans-serif;
+    /* background-color: #f0f0f0; */
+}
+  
+.top-strip {
+    background-color: #0e5500; /* Change this to your preferred color */
+    color: white;
+    padding: 10px 0;
+}
+
+.top-container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.top-nav {
+    text-align: right;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.top-nav ul li:first-child {
+    margin-left: 0;
+}
+
+.top-nav ul li a {
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 16px;
+}
+
+
+.row {
+    display: flex;
+    
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.col-md-3 {
+    width: 20%;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.col-md-9 {
+    width: 85%;
+}
+
+.bio-container {
+    display: flex;
+    /* margin-bottom: 20px; */
+    /* margin-top: 20px; */
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+.sidebar {
+    width: 100%;
+    width: 250px;
+    padding-right: 20px;
+}
+  
+.profile-pic {
+    width: 100%;
+    height:auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+  
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin:0;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #333; /* Change this to your preferred default color */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.social-links a:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.social-links a:hover span{
+    
+    color: #2d36bb; 
+    border-bottom: 1px solid #2d36bb;
+    /* border-bottom: 1px solid #0e5500; */
+}
+
+.social-links p {
+    margin: 0;
+    /* color: #333; This ensures the email text color matches the links */
+}
+  
+  .main-content {
+    flex: 1;
+    padding-left: 20px;
+    /* border-left: 1px solid #ddd; */
+  }
+  
+  
+  .citation {
+    position: relative;
+    margin-top: 15px;
+    padding-bottom: 30px;
+  }
+  
+  .citation img {
+    float: left;
+    clear: both;
+    width: 300px;
+    margin-right: 20px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      max-width: 100%;
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .main-content {
+      padding-left: 0;
+      border-left: none;
+    }
+
+    .profile-pic {
+        max-width: 250px;
+        margin: 0 auto 20px;
+        display: block;
+    }
+  }

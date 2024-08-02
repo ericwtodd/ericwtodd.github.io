@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Todd</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Academic Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+</head>
+
+<body>
+    <header class="top-strip">
+        <div class="top-container">
+        <nav class="top-nav">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="files/Curriculum_Vitae.pdf">CV</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <!-- Add more links as needed -->
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <img src="images/eric_profile.jpg" alt="Eric Todd" class="profile-pic">
+            <div class="social-links">
+              <a href="mailto:todd.er@northeastern.edu"><i class="fas fa-envelope fa-lg"></i><span> Email</span></a>
+              <a href="https://twitter.com/ericwtodd" target="_blank"><i class="fab fa-fw fa-twitter-square"></i><span> Twitter</span></a>
+              <a href="https://github.com/ericwtodd" target="_blank"><i class="fab fa-github fa-lg"></i><span> Github</span></a>
+              <a href="https://www.linkedin.com/in/eric-w-todd/" target="_blank"><i class="fab fa-fw fa-linkedin"></i><span> LinkedIn</span></a>
+              <a href="https://scholar.google.com/citations?hl=en&user=o12WPZEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="ai ai-google-scholar" style="font-size:1.3rem"></i><span> Google Scholar</span></a>
+            </div>
+          </div>
+
+        <div class="main-content">
+            <section id="conference-publications">
+                <h2>Conference Publications</h2>
+                    
+                <div class="citation">
+                    <!-- <img src="images/fv-2.png" alt="fv-paper"> -->
+                    <b>Eric Todd</b>, Millicent L. Li, Arnab Sen Sharma, Aaron Mueller, Byron C. Wallace, David Bau. <a href="https://arxiv.org/pdf/2310.15213">Function Vectors in Large Language Models.</a> <em>Proceedings of the 2024 International Conference on Learning Representations.</em> (ICLR 2024)
+                    <div class="publication-content">
+                        <div class="button-container">
+                            <button class="abstract-toggle">Abstract</button>
+                            <a href="https://functions.baulab.info"><button>Project Website</button></a>
+                            <a href="https://arxiv.org/abs/2310.15213"><button>arXiv</button></a>
+                            <a href="https://openreview.net/forum?id=AwyxtyMwaG"><button>OpenReview</button></a>
+                            <div class="abstract-container">
+                                <p>We report the presence of a simple neural mechanism that represents an input-output function as a vector 
+                                    within autoregressive transformer language models (LMs). Using causal mediation analysis on a diverse range 
+                                    of in-context-learning (ICL) tasks, we find that a small number attention heads transport a compact representation 
+                                    of the demonstrated task, which we call a function vector (FV). FVs are robust to changes in context, i.e., 
+                                    they trigger execution of the task on inputs such as zero-shot and natural text settings that do not resemble the ICL contexts 
+                                    from which they are collected. We test FVs across a range of tasks, models, and layers and find strong causal effects across settings in middle layers.
+                                    We investigate the internal structure of FVs and find while that they often contain information that encodes the output space of the function, 
+                                    this information alone is not sufficient to reconstruct an FV. Finally, we test semantic vector composition in FVs,
+                                    and find that to some extent they can be summed to create vectors that trigger new complex tasks. Our findings show that compact, 
+                                    causal internal vector representations of function abstractions can be explicitly extracted from LLMs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="citation">
+                    <b>Eric Todd</b>, Mylan R. Cook, Katrina Pedersen, David S. Woolworth, Brooks A. Butler, Xin Zhao,
+                    Colt Liu, Kent L. Gee, Mark K. Transtrum, Sean Warnick. <a href="https://pubs.aip.org/asa/poma/article/39/1/040003/838127/Automatic-detection-of-instances-of-focused-crowd">Automatic detection of instances of
+                        focused crowd involvement at recreational events.</a> <em>Proceedings of Meetings on Acoustics</em> <b>39</b>, 040003. (2019)
+                    <div class="publication-content">
+                        <div class="button-container">
+                            <button class="abstract-toggle">Abstract</button>
+                            <a href="https://pubs.aip.org/asa/poma/article/39/1/040003/838127/Automatic-detection-of-instances-of-focused-crowd"><button>POMA</button></a>
+                            <div class="abstract-container">
+                                <p>This paper describes the development of an automated classification algorithm for detecting instances of focused
+                                    crowd involvement present in crowd cheering. The purpose of this classification system is for situations where crowds
+                                    are to be rewarded for not just the loudness of cheering, but for a concentrated effort, such as in Mardi Gras parades to
+                                    attract bead throws or during critical moments in sports matches. It is therefore essential to separate non-crowd noise,
+                                    general crowd noise, and focused crowd cheering efforts from one another. The importance of various features—both
+                                    spectral and low-level audio processing features—are investigated. Data from both parades and sporting events are
+                                    used for comparison of noise from different venues. This research builds upon previous clustering analyses of crowd
+                                    noise from collegiate basketball games, using hierarchical clustering as an unsupervised machine learning approach to
+                                    identify low-level features related to focused crowd involvement. For Mardi Gras crowd data we use a continuous
+                                    thresholding approach based on these key low-level features as a method of identifying instances where the crowd is
+                                    particularly active and engaged.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="citation">
+                    Brooks A. Butler, Katrina Pedersen, Mylan R. Cook, Spencer G. Wadsworth, <b>Eric Todd</b>, Dallen Stark, Kent L. Gee, Mark K. Transtrum, Sean Warnick.
+                    <a href="https://pubs.aip.org/asa/poma/article/35/1/055006/997305/Classifying-crowd-behavior-at-collegiate">Classifying crowd behavior at collegiate basketball games using acoustic data.</a> <em>Proceedings of Meetings on Acoustics</em> <b>35</b>, 055006. (2018)
+                    <div class="publication-content">
+                        <div class="button-container">
+                            <button class="abstract-toggle">Abstract</button>                            
+                            <a href="https://pubs.aip.org/asa/poma/article/35/1/055006/997305/Classifying-crowd-behavior-at-collegiate"><button>POMA</button></a>
+                            <div class="abstract-container">
+                                <p>The relationship between crowd noise and crowd behavioral dynamics is a relatively unexplored field of
+                                    research. Signal processing and machine learning (ML) may be useful in classifying and predicting crowd
+                                    emotional state. This paper describes using both supervised and unsupervised ML methods to
+                                    automatically differentiate between different types of crowd noise. Features used include A-weighted
+                                    spectral levels, low-level audio signal parameters, and Mel-frequency cepstral coefficients. K-means
+                                    clustering is used for the unsupervised approach with spectral levels, and six distinct clusters are found;
+                                    four of these clusters correspond to different amounts of crowd involvement, while two correspond to
+                                    different amounts of band or public announcement system noise. Random forests are used for the
+                                    supervised approach, wherein validation and testing accuracies are found to be similar. These
+                                    investigations are useful for differentiating between types of crowd noise, which is necessary for future
+                                    work in automatically determining and classifying crowd emotional state. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+            </section>
+
+            <hr>
+            
+            <section id="preprints">
+            <h2>Preprints and In Submission</h2>
+
+            <div class="citation">
+                Jaden Fiotto-Kaufman, Alexander R Loftus, <b>Eric Todd</b>, Jannik Brinkmann, Caden Juang, Koyena Pal, Can Rager, Aaron Mueller, Samuel Marks, Arnab Sen Sharma, Francesca Lucchetti, Michael Ripa, Adam Belfki, Nikhil Prakash, Sumeet Multani, Carla Brodley, Arjun Guha, Jonathan Bell, Byron Wallace, David Bau. <a href="https://arxiv.org/pdf/2407.14561">NNsight and NDIF: Democratizing Access to Foundation Model Internals</a>. 2024.
+                <div class="publication-content">
+                    <div class="button-container">
+                        <button class="abstract-toggle">Abstract</button>
+                        <a href="https://nnsight.net"><button>Project Website</button></a>
+                        <a href="https://arxiv.org/abs/2407.14561"><button>arXiv</button></a>
+                        <div class="abstract-container">
+                            <p> The enormous scale of state-of-the-art foundation models has limited their accessibility to scientists, 
+                                because customized experiments on large models require costly hardware and complex engineering that is impractical for most researchers. 
+                                To alleviate these problems, we introduce NNsight, an open-source Python package with a simple, flexible API 
+                                that can express interventions on any PyTorch model by building computation graphs. 
+                                We also introduce NDIF, a collaborative research platform providing researchers access to foundation-scale LLMs via the NNsight API. 
+                                Code, documentation, and tutorials are available at <a href="https://nnsight.net/">https://nnsight.net/</a>.</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+
+            <hr>
+            <footer>
+                <p class="copyright">&copy; 2024 Eric Todd. All rights reserved. Last updated on August 2, 2024.</p>
+            </footer>
+        
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+
