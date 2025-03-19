@@ -236,3 +236,73 @@ font-size: 16px;
         display: block;
     }
   }
+
+
+/* News Collapsible */
+  .news-collapsible {
+    margin-top: 20px;
+  }
+  
+  .year-section {
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+  }
+  
+  .year-header {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .year-header:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .year-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #0e5500;
+  }
+  
+  .year-header::after {
+    content: '▼';
+    font-size: 12px;
+    transition: transform 0.3s;
+  }
+  
+  .year-header.collapsed::after {
+    transform: rotate(-90deg);
+  }
+  
+  .year-content {
+    padding: 10px 15px;
+    display: block;
+    overflow: hidden;
+    max-height: 1000px;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .year-content.collapsed {
+    max-height: 0;
+    padding: 0 15px;
+    transition: max-height 0.3s ease-out, padding 0.3s step-end;
+  }
+  
+  .news-group {
+    margin-bottom: 15px;
+  }
+  
+  .news-group h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .news-item {
+    margin-left: 15px;
+  }

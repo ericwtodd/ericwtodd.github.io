@@ -43,7 +43,10 @@
                 <h2>Conference Publications</h2>
 
                 <div class="citation">
-                    Jaden Fiotto-Kaufman, Alexander R. Loftus, <b>Eric Todd</b>, Jannik Brinkmann, Koyena Pal, Dmitrii Troitskii, Michael Ripa, Adam Belfki, Can Rager, Caden Juang, Aaron Mueller, Samuel Marks, Arnab Sen Sharma, Francesca Lucchetti, Nikhil Prakash, Carla Brodley, Arjun Guha, Jonathan Bell, Byron C. Wallace, David Bau. <a href="https://arxiv.org/pdf/2407.14561">NNsight and NDIF: Democratizing Access to Open-Weight Foundation Model Internals.</a> <em>Proceedings of the 2025 International Conference on Learning Representations.</em> (ICLR 2025)
+                    Jaden Fiotto-Kaufman, Alexander R. Loftus, <b>Eric Todd</b>, Jannik Brinkmann, Koyena Pal, Dmitrii Troitskii, 
+                    Michael Ripa, Adam Belfki, Can Rager, Caden Juang, Aaron Mueller, Samuel Marks, Arnab Sen Sharma, Francesca Lucchetti, Nikhil Prakash, 
+                    Carla Brodley, Arjun Guha, Jonathan Bell, Byron C. Wallace, David Bau. 
+                    <a href="https://arxiv.org/pdf/2407.14561">NNsight and NDIF: Democratizing Access to Open-Weight Foundation Model Internals.</a> <em>Proceedings of the 2025 International Conference on Learning Representations.</em> (ICLR 2025)
                     <div class="publication-content">
                         <div class="button-container">
                             <button class="abstract-toggle">Abstract</button>
@@ -52,19 +55,30 @@
                             <a href="https://arxiv.org/abs/2407.14561"><button>PDF</button></a>
                             <a href="https://openreview.net/forum?id=MxbEiFRf39"><button>OpenReview</button></a>
                             <div class="abstract-container">
-                                <p> The enormous scale of state-of-the-art foundation models has limited their accessibility to scientists, 
-                                    because customized experiments on large models require costly hardware and complex engineering that is impractical for most researchers. 
-                                    To alleviate these problems, we introduce NNsight, an open-source Python package with a simple, flexible API 
-                                    that can express interventions on any PyTorch model by building computation graphs. 
-                                    We also introduce NDIF, a collaborative research platform providing researchers access to foundation-scale LLMs via the NNsight API. 
-                                    Code, documentation, and tutorials are available at <a href="https://nnsight.net/">https://nnsight.net/</a>.</p>
+                                <p> We introduce NNsight and NDIF, technologies that work in tandem to enable
+                                    scientific study of very large neural networks. NNsight is an open-source system
+                                    that extends PyTorch to introduce deferred remote execution. NDIF is a scalable
+                                    inference service that executes NNsight requests, allowing users to share GPU
+                                    resources and pretrained models. These technologies are enabled by the intervention graph, 
+                                    an architecture developed to decouple experiment design from model
+                                    runtime. Together, this framework provides transparent and efficient access to
+                                    the internals of deep neural networks such as very large language models (LLMs)
+                                    without imposing the cost or complexity of hosting customized models individually.
+                                    We conduct a quantitative survey of the machine learning literature that reveals
+                                    a growing gap in the study of the internals of large-scale AI. We demonstrate
+                                    the design and use of our framework to address this gap by enabling a range of
+                                    research methods on huge models. Finally, we conduct benchmarks to compare
+                                    performance with previous approaches. Code, documentation, and tutorials are
+                                    available at <a href="https://nnsight.net/">https://nnsight.net/</a>.</p>
                                 </div>
                             </div>
                         </div> 
                 </div>
                     
                 <div class="citation">
-                    <b>Eric Todd</b>, Millicent L. Li, Arnab Sen Sharma, Aaron Mueller, Byron C. Wallace, David Bau. <a href="https://arxiv.org/pdf/2310.15213">Function Vectors in Large Language Models.</a> <em>Proceedings of the 2024 International Conference on Learning Representations.</em> (ICLR 2024)
+                    <b>Eric Todd</b>, Millicent L. Li, Arnab Sen Sharma, Aaron Mueller, Byron C. Wallace, David Bau. 
+                    <a href="https://arxiv.org/pdf/2310.15213">Function Vectors in Large Language Models.</a> 
+                    <em>Proceedings of the 2024 International Conference on Learning Representations.</em> (ICLR 2024)
                     <div class="publication-content">
                         <div class="button-container">
                             <button class="abstract-toggle">Abstract</button>
@@ -89,7 +103,8 @@
 
                 <div class="citation">
                     <b>Eric Todd</b>, Mylan R. Cook, Katrina Pedersen, David S. Woolworth, Brooks A. Butler, Xin Zhao,
-                    Colt Liu, Kent L. Gee, Mark K. Transtrum, Sean Warnick. <a href="https://pubs.aip.org/asa/poma/article/39/1/040003/838127/Automatic-detection-of-instances-of-focused-crowd">Automatic detection of instances of
+                    Colt Liu, Kent L. Gee, Mark K. Transtrum, Sean Warnick. 
+                    <a href="https://pubs.aip.org/asa/poma/article/39/1/040003/838127/Automatic-detection-of-instances-of-focused-crowd">Automatic detection of instances of
                         focused crowd involvement at recreational events.</a> <em>Proceedings of Meetings on Acoustics</em> <b>39</b>, 040003. (2019)
                     <div class="publication-content">
                         <div class="button-container">
@@ -146,12 +161,36 @@
             <h2>Preprints and In Submission</h2>
 
                 <div class="citation">
-                    Aaron Mueller, Jannik Brinkmann, Millicent Li, Samuel Marks, Koyena Pal, Nikhil Prakash, Can Rager, Aruna Sankaranarayanan, Arnab Sen Sharma, Jiuding Sun, <b>Eric Todd</b>, David Bau, Yonatan Belinkov. <a href="https://arxiv.org/abs/2408.01416">The Quest for the Right Mediator: A History, Survey, and Theoretical Grounding of Causal Interpretability.</a> 2024.
+                    Lee Sharkey, Bilal Chughtai, Joshua Batson, Jack Lindsey, Jeff Wu, Lucius Bushnaq, Nicholas Goldowsky-Dill, Stefan Heimersheim, 
+                    Alejandro Ortega, Joseph Bloom, Stella Biderman, Adria Garriga-Alonso, Arthur Conmy, Neel Nanda, Jessica Rumbelow, Martin Wattenberg, 
+                    Nandi Schoots, Joseph Miller, Eric J. Michaud, Stephen Casper, Max Tegmark, William Saunders, David Bau, <b>Eric Todd</b>, Atticus Geiger, 
+                    Mor Geva, Jesse Hoogland, Daniel Murfet, Tom McGrath.
+                    <a href="https://arxiv.org/abs/2501.16496">Open Problems in Mechanistic Interpretability.</a> 2025.
+                    <div class="publication-content">
+                        <div class="button-container">
+                            <button class="abstract-toggle">Abstract</button> 
+                            <a href="https://arxiv.org/pdf/2501.16496"><button>PDF</button></a>
+                            <div class="abstract-container">
+                                <p> Mechanistic interpretability aims to understand the computational mechanisms underlying neural networks' capabilities
+                                    in order to accomplish concrete scientific and engineering goals. Progress in this field thus promises to provide greater assurance
+                                    over AI system behavior and shed light on exciting scientific questions about the nature of intelligence. 
+                                    Despite recent progress toward these goals, there are many open problems in the field that require solutions before many scientific and practical benefits can be realized:
+                                    Our methods require both conceptual and practical improvements to reveal deeper insights;
+                                    we must figure out how best to apply our methods in pursuit of specific goals; and the field must grapple with socio-technical challenges that influence and are influenced by our work. 
+                                    This forward-facing review discusses the current frontier of mechanistic interpretability and the open problems that the field may benefit from prioritizing.</p>
+                                </div>
+                            </div>
+                        </div> 
+                </div>
+
+                <div class="citation">
+                    Aaron Mueller, Jannik Brinkmann, Millicent Li, Samuel Marks, Koyena Pal, Nikhil Prakash, Can Rager, Aruna Sankaranarayanan, Arnab Sen Sharma, Jiuding Sun, <b>Eric Todd</b>, David Bau, Yonatan Belinkov. 
+                    <a href="https://arxiv.org/abs/2408.01416">The Quest for the Right Mediator: A History, Survey, and Theoretical Grounding of Causal Interpretability.</a> 2024.
                     <div class="publication-content">
                         <div class="button-container">
                             <button class="abstract-toggle">Abstract</button>
                             <!-- <a href=""><button>Project Website</button></a> -->
-                            <a href="https://arxiv.org/abs/2408.01416"><button>PDF</button></a>
+                            <a href="https://arxiv.org/pdf/2408.01416"><button>PDF</button></a>
                             <div class="abstract-container">
                                 <p> Interpretability provides a toolset for understanding how and why neural networks behave in certain ways. 
                                     However, there is little unity in the field: most studies employ ad-hoc evaluations and do not share theoretical foundations, 
@@ -170,11 +209,26 @@
                             </div>
                         </div> 
                 </div>
+
+                <!-- <div class="citation">
+                    AUTHORS HERE <a href="">TITLE HERE</a> YEAR.
+                    <div class="publication-content">
+                        <div class="button-container">
+                            <button class="abstract-toggle">Abstract</button>
+                            <a href=""><button>Project Website</button></a> 
+                            <a href=""><button>PDF</button></a>
+                            <div class="abstract-container">
+                                <p> ABSTRACT HERE</p>
+                                </div>
+                            </div>
+                        </div> 
+                </div> -->
+
             </section>
 
             <hr>
             <footer>
-                <p class="copyright">&copy; 2025 Eric Todd. All rights reserved. Last updated on January 28, 2025.</p>
+                <p class="copyright">&copy; 2025 Eric Todd. All rights reserved. Last updated on March 19, 2025.</p>
             </footer>
         
         </div>
