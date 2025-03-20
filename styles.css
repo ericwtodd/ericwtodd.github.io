@@ -305,4 +305,14 @@ font-size: 16px;
   
   .news-item {
     margin-left: 15px;
-  }
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.news-item:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0e5500; /* Using your green color from the top strip */
+}
