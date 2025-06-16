@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Update last modified date
+  const lastUpdated = "June 16, 2025"; // Change this date when you update your site
+  document.querySelectorAll('.last-updated').forEach(el => {
+    el.textContent = lastUpdated;
+  });
+
   document.querySelectorAll('.abstract-toggle').forEach(button => {
     button.addEventListener('click', function() {
       const abstractContainer = this.closest('.citation').querySelector('.abstract-container');
