@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Eric Todd</title> <!-- Tab title -->
+    
+    
+    <!-- Your existing styles -->
+    <link rel="stylesheet" href="../styles.css">
+    
+    <!-- Distill-style specific CSS -->
+    <style>
+        /* Existing styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .article-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .article-header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .article-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #0e5500;
+            line-height: 1.2;
+        }
+        
+        .article-meta {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .article-authors {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        
+        .article-abstract {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            font-size: 16px;
+            line-height: 1.7;
+            border-left: 4px solid #0e5500;
+        }
+        
+        .article-content {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        
+        .article-content h2 {
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #0e5500;
+        }
+        
+        .article-content p {
+            margin-bottom: 20px;
+        }
+        
+        /* Citation styles - FIXED */
+        .citation {
+            color: #3096d5;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.8em;
+            vertical-align: super;
+            position: relative;
+            display: inline-block;
+            line-height: 0; 
+            margin: 0 0px;
+            white-space: nowrap;
+        }
+        
+        .citation:hover {
+            color: #2d36bb;
+            text-decoration: underline;
+        }
+        
+        /* Dynamic tooltip container */
+        .citation-tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            width: 350px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            margin-bottom: 8px;
+            z-index: 1000;
+            pointer-events: none;
+            font-weight: normal;
+            text-align: left;
+            white-space: normal;
+        }
+        
+        /* Tooltip arrow */
+        .citation-tooltip::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 8px solid transparent;
+            border-top-color: white;
+        }
+        
+        .citation-tooltip::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 9px solid transparent;
+            border-top-color: #ddd;
+            margin-top: -1px;
+        }
+        
+        .citation:hover .citation-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Back to blog link */
+        .back-to-blog {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #3096d5;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .back-to-blog:hover {
+            color: #2d36bb;
+            border-bottom: 1px solid #2d36bb;
+        }
+        
+        /* References section */
+        .references {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid #e0e0e0;
+        }
+        
+        .reference-item {
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+            padding-left: 30px;
+            text-indent: -30px;
+        }
+    </style>
+    
+    <!-- MathJax for equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <header class="top-strip">
+        <div class="top-container">
+        <nav class="top-nav">
+            <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../publications.html">Publications</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../files/Curriculum_Vitae.pdf" target="_blank">CV</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <div class="article-container">
+        <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
+        
+        <div class="article-header">
+            <h1 class="article-title">Template Title</h1>
+            <div class="article-meta">Date • 8 min read</div>
+            <div class="article-authors">Eric Todd</div>
+        </div>
+        
+        <div class="article-abstract">
+            <strong>Abstract:</strong> Text Summary Goes Here
+        </div>
+        
+        <div class="article-content">
+            <h2>Introduction</h2>
+            <p>
+                This is a main body of text. Write and cite <span class="citation" data-ref="1">[1]</span> to your heart's content.
+            </p>
+        
+            <!-- <p>
+                Unlike recurrent neural networks that process sequences step-by-step, transformers can process entire sequences in parallel, making them much more efficient to train. The key to this parallelization is the self-attention mechanism.
+                <span class="sidenote">Self-attention allows each position in a sequence to attend to all positions in the previous layer, enabling the model to capture long-range dependencies efficiently.</span>
+            </p>
+            
+            <h2>The Mathematics of Attention</h2>
+            <p>
+                At its core, the attention mechanism computes a weighted sum of values based on the similarity between queries and keys. The fundamental equation is:
+            </p>
+            
+            <div class="equation">
+                \[
+                \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+                \]
+            </div>
+            
+            <p>
+                Where \(Q\), \(K\), and \(V\) are the query, key, and value matrices respectively, and \(d_k\) is the dimension of the key vectors. The scaling factor \(\frac{1}{\sqrt{d_k}}\) prevents the dot products from growing too large.
+            </p>
+            
+            <h3>Interactive Visualization</h3>
+            
+            <div class="interactive-figure">
+                <svg id="attention-viz" width="600" height="400"></svg>
+                <div class="figure-caption">
+                    Figure 1: Interactive visualization of the attention mechanism. Hover over elements to see how attention weights are computed.
+                </div>
+            </div>
+            
+            <h2>Multi-Head Attention</h2>
+            <p>
+                Instead of performing a single attention function, transformers use multi-head attention, which allows the model to jointly attend to information from different representation subspaces:
+            </p>
+            
+            <div class="code-block">
+<pre>def multi_head_attention(Q, K, V, num_heads):
+    # Split Q, K, V into multiple heads
+    Q_heads = split_heads(Q, num_heads)
+    K_heads = split_heads(K, num_heads)
+    V_heads = split_heads(V, num_heads)
+    
+    # Apply attention to each head
+    outputs = []
+    for q, k, v in zip(Q_heads, K_heads, V_heads):
+        outputs.append(attention(q, k, v))
+    
+    # Concatenate and project
+    return linear_projection(concatenate(outputs))</pre>
+            </div>
+            
+            <p>
+                Each attention head can learn to focus on different types of relationships in the data. For instance, in language models, different heads might specialize in syntactic relationships, semantic similarities, or positional patterns.
+                <span class="sidenote">Research has shown that attention heads often specialize in specific linguistic phenomena, such as subject-verb agreement or coreference resolution.</span>
+            </p>
+            
+            <h2>Practical Implications</h2>
+            <p>
+                The attention mechanism has several important properties that make it particularly suitable for sequence modeling:
+            </p>
+            
+            <ul>
+                <li><strong>Parallelization:</strong> Unlike RNNs, attention can be computed for all positions simultaneously</li>
+                <li><strong>Long-range dependencies:</strong> Direct connections between any two positions in the sequence</li>
+                <li><strong>Interpretability:</strong> Attention weights provide some insight into what the model is "looking at"</li>
+            </ul>
+            
+            <h2>Conclusion</h2>
+            <p>
+                Understanding attention mechanisms is crucial for anyone working with modern NLP models. While the mathematics might seem complex at first, the core idea is elegantly simple: let the model learn what to pay attention to. This flexibility has proven to be incredibly powerful, enabling breakthroughs in language understanding, generation, and beyond.
+            </p> -->
+            
+            <div class="references">
+                <h2>References</h2>
+                <div class="reference-item" data-id="1">
+                    [1] Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I. (2017). Attention is all you need. In Advances in neural information processing systems (pp. 5998-6008).
+                </div>
+                <!-- <div class="reference-item" data-id="2">
+                    [2] Bahdanau, D., Cho, K., & Bengio, Y. (2014). Neural machine translation by jointly learning to align and translate. arXiv preprint arXiv:1409.0473.
+                </div>
+                <div class="reference-item" data-id="3">
+                    [3] Wei, J., Tay, Y., Bommasani, R., Raffel, C., Zoph, B., Borgeaud, S., ... & Fedus, W. (2022). Emergent abilities of large language models. Transactions on Machine Learning Research.
+                </div>
+                <div class="reference-item" data-id="4">
+                    [4] Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., ... & Houlsby, N. (2020). An image is worth 16x16 words: Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929.
+                </div>
+                <div class="reference-item" data-id="5">
+                    [5] Radford, A., Kim, J. W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., ... & Sutskever, I. (2021). Learning transferable visual models from natural language supervision. In International conference on machine learning (pp. 8748-8763).
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all citations and references
+            const citations = document.querySelectorAll('.citation');
+            const references = document.querySelectorAll('.reference-item');
+            
+            // Create a map of reference data
+            const referenceMap = {};
+            references.forEach(ref => {
+                const id = ref.getAttribute('data-id');
+                if (id) {
+                    // Extract the text and clean it up
+                    let text = ref.textContent.trim();
+                    // Remove the [#] prefix
+                    text = text.replace(/^\[\d+\]\s*/, '');
+                    
+                    // Create a shortened version for the tooltip
+                    // Extract authors (up to first parenthesis)
+                    const authorMatch = text.match(/^([^(]+)\(/);
+                    const yearMatch = text.match(/\((\d{4})\)/);
+                    
+                    if (authorMatch && yearMatch) {
+                        const authors = authorMatch[1].trim();
+                        const year = yearMatch[1];
+                        
+                        // Shorten author list if too long
+                        let shortAuthors = authors;
+                        if (authors.includes('...')) {
+                            shortAuthors = authors.split('...')[0] + 'et al.';
+                        } else if (authors.split(',').length > 3) {
+                            shortAuthors = authors.split(',')[0] + ' et al.';
+                        }
+                        
+                        // Extract title (between year and next period)
+                        const afterYear = text.substring(text.indexOf(year) + 5);
+                        const titleMatch = afterYear.match(/([^.]+)\./);
+                        const title = titleMatch ? titleMatch[1].trim() : afterYear.substring(0, 50) + '...';
+                        
+                        referenceMap[id] = {
+                            short: `${shortAuthors} (${year}). ${title}.`,
+                            full: text
+                        };
+                    } else {
+                        // Fallback for different citation formats
+                        referenceMap[id] = {
+                            short: text.substring(0, 100) + (text.length > 100 ? '...' : ''),
+                            full: text
+                        };
+                    }
+                }
+            });
+            
+            // Add tooltips to citations
+            citations.forEach(citation => {
+                const refId = citation.getAttribute('data-ref');
+                const refData = referenceMap[refId];
+                
+                if (refData) {
+                    // Create tooltip element
+                    const tooltip = document.createElement('span');
+                    tooltip.className = 'citation-tooltip';
+                    tooltip.textContent = refData.short;
+                    
+                    // Add tooltip to citation
+                    citation.appendChild(tooltip);
+                    
+                    // Optional: Add click to scroll to reference
+                    citation.style.cursor = 'pointer';
+                    citation.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const targetRef = document.querySelector(`.reference-item[data-id="${refId}"]`);
+                        if (targetRef) {
+                            targetRef.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            // Briefly highlight the reference
+                            targetRef.style.backgroundColor = '#ffffcc';
+                            setTimeout(() => {
+                                targetRef.style.transition = 'background-color 1s';
+                                targetRef.style.backgroundColor = '';
+                            }, 500);
+                        }
+                    });
+                }
+            });
+            
+            // Adjust tooltip position if it goes off-screen
+            citations.forEach(citation => {
+                citation.addEventListener('mouseenter', function() {
+                    const tooltip = this.querySelector('.citation-tooltip');
+                    if (tooltip) {
+                        setTimeout(() => {
+                            const rect = tooltip.getBoundingClientRect();
+                            const viewportWidth = window.innerWidth;
+                            
+                            if (rect.left < 10) {
+                                tooltip.style.left = '10px';
+                                tooltip.style.transform = 'translateX(0)';
+                            } else if (rect.right > viewportWidth - 10) {
+                                tooltip.style.left = 'auto';
+                                tooltip.style.right = '10px';
+                                tooltip.style.transform = 'translateX(0)';
+                            }
+                        }, 10);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

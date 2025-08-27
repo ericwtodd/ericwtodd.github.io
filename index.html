@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eric Todd</title>
+    <title>Eric Todd - Personal Website</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <!-- Font Awesome -->
@@ -18,9 +18,9 @@
         <nav class="top-nav">
             <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="files/Curriculum_Vitae.pdf">CV</a></li>
             <li><a href="publications.html">Publications</a></li>
-            <!-- Add more links as needed -->
+            <!-- <li><a href="blog.html">Blog</a></li> -->
+            <li><a href="files/Curriculum_Vitae.pdf" target="_blank">CV</a></li>
             </ul>
         </nav>
         </div>
@@ -35,16 +35,81 @@
             <a href="https://github.com/ericwtodd" target="_blank"><i class="fab fa-github fa-lg"></i><span> Github</span></a>
             <a href="https://www.linkedin.com/in/eric-w-todd/" target="_blank"><i class="fab fa-fw fa-linkedin"></i><span> LinkedIn</span></a>
             <a href="https://scholar.google.com/citations?user=o12WPZEAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar" style="font-size:1.3rem"></i><span> Google Scholar</span></a>
-            <!-- <a href="https://bsky.app/profile/ericwtodd.bsky.social" target="_blank"><i class="fa-brands fa-bluesky" style="font-size:1.3rem"></i><span> Bluesky</span></a> -->
+            <!-- <a href="https://bsky.app/profile/ericwtodd.bsky.social" target="_blank"><i class="fab fa-bluesky" style="font-size:1.3rem"></i><span> Bluesky</span></a> -->
           </div>
         </div>
 
         <div class="main-content">
           <section id="bio">
             <h1>About Me</h1>
-            <p>Hi, my name is Eric Todd. I'm a third-year PhD student at Northeastern University advised by <a href="https://baulab.info/">Professor David Bau</a>. Prior to beginning my PhD, I studied <a href="https://acme.byu.edu">Applied and Computational Mathematics</a> at Brigham Young University (BYU).</p>
-            <p>I'm interested in understanding the learned structure of large neural networks, and how their internal representations enable their impressive generalization capabilities.</p>
+            <p>Hi, my name is Eric Todd. I'm a fourth-year PhD student at Northeastern University advised by <a href="https://baulab.info/" target="_blank">Professor David Bau</a>. Prior to beginning my PhD, I studied <a href="https://acme.byu.edu/acme-mission" target="_blank">Applied and Computational Mathematics (ACME)</a> at Brigham Young University (BYU).</p>
+            <p>I'm interested in understanding learned structure inside of large neural networks, and how their internal representations enable their impressive generalization capabilities.</p>
             <p>My research interests generally include machine learning and interpretability. I'm particularly excited by generative models and their applications in natural language and computer vision.</p>
+            <!-- <p>My long-term vision for interpretability research is that it will enable trustworthy understanding of large neural networks in terms of </p> -->
+          </section>
+
+          <hr>
+
+          <section id="selected-publications">
+            <h1>Selected Publications</h1>
+
+            <div class="citation">
+                <img src="images/papers/fv-2.png" alt="fv-paper">
+                <a href="https://arxiv.org/pdf/2310.15213" target="_blank">Function Vectors in Large Language Models</a><br>
+                <b>Eric Todd</b>, Millicent L. Li, Arnab Sen Sharma, Aaron Mueller, Byron C. Wallace, David Bau.
+                <em>The Twelfth International Conference on Learning Representations.</em> (ICLR 2024)
+                    <div class="button-container">
+                        <button class="abstract-toggle">Abstract</button>
+                        <a href="https://functions.baulab.info" target="_blank"><button>Project Website</button></a>
+                        <a href="https://arxiv.org/abs/2310.15213" target="_blank"><button>arXiv</button></a>
+                        <a href="https://openreview.net/forum?id=AwyxtyMwaG" target="_blank"><button>OpenReview</button></a>
+                        <div class="abstract-container">
+                            <p>We report the presence of a simple neural mechanism that represents an input-output function as a vector 
+                                within autoregressive transformer language models (LMs). Using causal mediation analysis on a diverse range 
+                                of in-context-learning (ICL) tasks, we find that a small number attention heads transport a compact representation of the demonstrated task, which we call a function vector (FV). FVs are robust to changes in context, i.e., 
+                                they trigger execution of the task on inputs such as zero-shot and natural text settings that do not resemble the ICL contexts 
+                                from which they are collected. We test FVs across a range of tasks, models, and layers and find strong causal effects across settings in middle layers.
+                                We investigate the internal structure of FVs and find while that they often contain information that encodes the output space of the function, 
+                                this information alone is not sufficient to reconstruct an FV. Finally, we test semantic vector composition in FVs,
+                                and find that to some extent they can be summed to create vectors that trigger new complex tasks. Our findings show that compact, 
+                                causal internal vector representations of function abstractions can be explicitly extracted from LLMs.</p>
+                        </div>
+                    </div>
+            </div> 
+            
+            <div class="citation">
+                <img src="images/papers/nnsight.png" alt="nnsight-paper">
+                <!-- <img src="images/papers/ndif_design.png" alt="nnsight-paper"> -->
+                 <!-- <img src="images/papers/ndif-logo.png" alt="nnsight-paper"> -->
+                <a href="https://arxiv.org/pdf/2407.14561" target="_blank">NNsight and NDIF: Democratizing Access to Open-Weight Foundation Model Internals</a><br>
+                Jaden Fiotto-Kaufman<sup>*</sup>, Alexander R. Loftus<sup>*</sup>, <b>Eric Todd</b>, Jannik Brinkmann, Koyena Pal, Dmitrii Troitskii, Michael Ripa, Adam Belfki, Can Rager, Caden Juang, Aaron Mueller, Samuel Marks, Arnab Sen Sharma, Francesca Lucchetti, Nikhil Prakash, Carla Brodley, Arjun Guha, Jonathan Bell, Byron C. Wallace, David Bau.
+                <em>The Thirteenth International Conference on Learning Representations.</em> (ICLR 2025)
+                    <div class="button-container">
+                        <button class="abstract-toggle">Abstract</button>
+                        <a href="https://ndif.us" target="_blank"><button>Project Website</button></a>
+                        <a href="https://arxiv.org/abs/2407.14561" target="_blank"><button>arXiv</button></a>
+                        <a href="https://openreview.net/forum?id=MxbEiFRf39" target="_blank"><button>OpenReview</button></a>
+                        <div class="abstract-container">
+                            <p> We introduce NNsight and NDIF, technologies that work in tandem to enable
+                                scientific study of very large neural networks. NNsight is an open-source system
+                                that extends PyTorch to introduce deferred remote execution. NDIF is a scalable
+                                inference service that executes NNsight requests, allowing users to share GPU
+                                resources and pretrained models. These technologies are enabled by the intervention graph, 
+                                an architecture developed to decouple experiment design from model
+                                runtime. Together, this framework provides transparent and efficient access to
+                                the internals of deep neural networks such as very large language models (LLMs)
+                                without imposing the cost or complexity of hosting customized models individually.
+                                We conduct a quantitative survey of the machine learning literature that reveals
+                                a growing gap in the study of the internals of large-scale AI. We demonstrate
+                                the design and use of our framework to address this gap by enabling a range of
+                                research methods on huge models. Finally, we conduct benchmarks to compare
+                                performance with previous approaches. Code, documentation, and tutorials are
+                                available at <a href="https://nnsight.net/" target="_blank">https://nnsight.net/</a>.</p>
+                        </div>
+                    </div>
+            </div>
+        
+            
           </section>
 
           <hr>
@@ -59,31 +124,45 @@
                         <h3>2025</h3>
                     </div>
                     <div class="year-content">
-                        <div class="news-group">
-                        <h4>June 2025</h4>                        
-                        <div class="news-item">Reviewed for <a href="https://neurips.cc/Conferences/2025">NeurIPS Main Conference</a></div>
-                        </div>
 
                         <div class="news-group">
-                        <h4>May 2025</h4>                        
-                        <div class="news-item">Reviewed for <a href="https://colmweb.org/">COLM 2025 Main Conference</a> and the <a href="https://actionable-interpretability.github.io/">Workshop on Actionable Interpretability at ICML 2025</a> </div>
-                        </div>
-
-                        <div class="news-group">
-                        <h4>April 2025</h4>
-                        <div class="news-item">Had a fun time attending <a href="https://nenlp.github.io/spr2025/">NENLP 2025</a> at Yale.</div>
-                        <div class="news-item">In a <a href="https://dualroute.baulab.info">new preprint</a>, we find we can separate out how LLMs do verbatim copying of tokens vs. copying of word meanings. This was a fun project led by <a href="https://sfeucht.github.io/">Sheridan</a>, that helps clarify how "induction" in LLMs can also happen over abstract contextual information rather than just literal token values.</div>
-                        </div>
-
-                        <div class="news-group">
-                        <h4>March 2025</h4>
-                        <div class="news-item">Reviewed for <a href="https://icml.cc/Conferences/2025">ICML 2025 Main Conference</a> and <a href="https://sites.google.com/view/miv-cvpr2025/home">The First Workshop on Mechanistic Interpretability for Vision at CVPR 2025</a></div>
+                            <h4>August 2025</h4>     
+                            <div class="news-item">Had a great time attending <a href="https://nemiconf.github.io/summer25/" target="_blank">NEMI</a> again this year. We had 200+ people come to Northeastern and it was fun to see the exciting research others are working on.</div>
+                            <div class="news-item">Reviewed for <a href="https://mechinterpworkshop.com/" target="_blank">Mechanistic Interpretability Workshop at NeurIPS 2025</a></div>
                         </div>
                         
                         <div class="news-group">
-                        <h4>January 2025</h4>
-                        <div class="news-item">Our <a href="https://openreview.net/forum?id=MxbEiFRf39">NNsight and NDIF</a> paper was accepted to ICLR 2025! I'm really excited about this framework for enabling research on large-scale AI, and about the mission of <a href="https://ndif.us">NDIF</a> in general.</div>
-                        <div class="news-item">Contributed to a new review-style preprint (with many others!), <a href="https://arxiv.org/pdf/2501.16496">Open Problems in Mechanistic Interpretability</a>, which details what kinds of problems we're currently thinking about as interpretability researchers and also what kinds of questions we still don't know the answers to.</div>
+                            <h4>July 2025</h4>     
+                            <div class="news-item">Big life update: My wife gave birth to our twins! It's been very busy, but also very fun having these two new little people at home.</div>
+                            <div class="news-item">Our <a href="https://dualroute.baulab.info" target="_blank">Dual-Route Model of Induction</a> paper was accepted at COLM 2025!</div>
+                            <div class="news-item">Reviewed for <a href="https://interplay-workshop.github.io/" target="_blank">COLM Interplay Worksop</a></div>
+                        </div> 
+
+                        <div class="news-group">
+                            <h4>June 2025</h4>                        
+                            <div class="news-item">Reviewed for <a href="https://neurips.cc/Conferences/2025" target="_blank">NeurIPS Main Conference</a></div>
+                        </div>
+
+                        <div class="news-group">
+                            <h4>May 2025</h4>                        
+                            <div class="news-item">Reviewed for <a href="https://colmweb.org/" target="_blank">COLM 2025 Main Conference</a> and the <a href="https://actionable-interpretability.github.io/" target="_blank">Workshop on Actionable Interpretability at ICML 2025</a> </div>
+                        </div>
+
+                        <div class="news-group">
+                            <h4>April 2025</h4>
+                            <div class="news-item">Had a fun time attending <a href="https://nenlp.github.io/spr2025/" target="_blank">NENLP 2025</a> at Yale.</div>
+                            <div class="news-item">In a <a href="https://dualroute.baulab.info" target="_blank">new preprint</a>, we find we can separate out how LLMs do verbatim copying of tokens vs. copying of word meanings. This was a fun project led by <a href="https://sfeucht.github.io/" target="_blank">Sheridan</a>, that helps clarify how "induction" in LLMs can also happen over abstract contextual information rather than just literal token values.</div>
+                        </div>
+
+                        <div class="news-group">
+                            <h4>March 2025</h4>
+                            <div class="news-item">Reviewed for <a href="https://icml.cc/Conferences/2025" target="_blank">ICML 2025 Main Conference</a> and <a href="https://sites.google.com/view/miv-cvpr2025/home" target="_blank">The First Workshop on Mechanistic Interpretability for Vision at CVPR 2025</a></div>
+                        </div>
+                        
+                        <div class="news-group">
+                            <h4>January 2025</h4>
+                            <div class="news-item">Our <a href="https://openreview.net/forum?id=MxbEiFRf39" target="_blank">NNsight and NDIF</a> paper was accepted to ICLR 2025! I'm really excited about this framework for enabling research on large-scale AI, and about the mission of <a href="https://ndif.us" target="_blank">NDIF</a> in general.</div>
+                            <div class="news-item">Contributed to a new review-style preprint (with many others!), <a href="https://arxiv.org/pdf/2501.16496" target="_blank">Open Problems in Mechanistic Interpretability</a>, which details what kinds of problems we're currently thinking about as interpretability researchers and also what kinds of questions we still don't know the answers to.</div>
                         </div>
                     </div>
                 </div>
@@ -95,33 +174,33 @@
                     <div class="year-content">
                         <div class="news-group">
                             <h4>November 2024</h4>
-                            <div class="news-item">Reviewed for the <a href="https://interpretable-ai-workshop.github.io/">Interpretable AI: Past, Present, and Future NeurIPS Workshop</a> and the <a href="https://iclr.cc/Conferences/2025">ICLR 2025 Main Conference</a>.</div>
+                            <div class="news-item">Reviewed for the <a href="https://interpretable-ai-workshop.github.io/" target="_blank">Interpretable AI: Past, Present, and Future NeurIPS Workshop</a> and the <a href="https://iclr.cc/Conferences/2025" target="_blank">ICLR 2025 Main Conference</a>.</div>
                         </div>
 
                         <div class="news-group">
                             <h4>August 2024</h4>
-                            <div class="news-item">Our <a href="https://arxiv.org/pdf/2408.01416">causal interpretability survey</a> is out on arXiv. As interpretability researchers, we're still trying to understand the right level of abstraction for thinking about neural network computation, but causal methods have become a promising method for studying them.</div>
+                            <div class="news-item">Our <a href="https://arxiv.org/pdf/2408.01416" target="_blank">causal interpretability survey</a> is out on arXiv. As interpretability researchers, we're still trying to understand the right level of abstraction for thinking about neural network computation, but causal methods have become a promising method for studying them.</div>
                         </div>
 
                         <div class="news-group">
                             <h4>July 2024</h4>
-                            <div class="news-item">Our preprint about <a href="https://arxiv.org/pdf/2407.14561">NNsight and NDIF</a> is out on arXiv. I'm excited about this framework for enabling access to the internal computations of large foundation models!</div>
+                            <div class="news-item">Our preprint about <a href="https://arxiv.org/pdf/2407.14561" target="_blank">NNsight and NDIF</a> is out on arXiv. I'm excited about this framework for enabling access to the internal computations of large foundation models!</div>
                         </div>
 
                         <div class="news-group">
                             <h4>June 2024</h4>
-                            <div class="news-item">Reviewed for <a href="https://neurips.cc/Conferences/2024">NeurIPS Main Conference</a> and <a href="https://iclworkshop.github.io/">1st ICML Workshop on In-Context Learning</a>.</div>
+                            <div class="news-item">Reviewed for <a href="https://neurips.cc/Conferences/2024" target="_blank">NeurIPS Main Conference</a> and <a href="https://iclworkshop.github.io/" target="_blank">1st ICML Workshop on In-Context Learning</a>.</div>
                         </div>
 
                         <div class="news-group">
                             <h4>May 2024</h4>
                             <div class="news-item">Invited talk on Function Vectors at the Princeton Neuroscience Institute.</div>
-                            <div class="news-item">Had a great time presenting our Function Vectors work at <a href="https://iclr.cc/Conferences/2024">ICLR 2024</a>.</div>
+                            <div class="news-item">Had a great time presenting our Function Vectors work at <a href="https://iclr.cc/Conferences/2024" target="_blank">ICLR 2024</a>.</div>
                         </div>
 
                         <div class="news-group">
                             <h4>January 2024</h4>
-                            <div class="news-item">Our <a href="https://functions.baulab.info/">Function Vectors</a> paper was accepted to ICLR 2024!</div>
+                            <div class="news-item">Our <a href="https://functions.baulab.info/" target="_blank">Function Vectors</a> paper was accepted to ICLR 2024!</div>
                         </div>
                   
                     </div>
@@ -140,69 +219,8 @@
                         </div>
                     </div>
                 </div> -->
-                
-            </div>
-
-          </section>
-
-          <hr>
-
-          <section id="selected-publications">
-            <h1>Selected Publications</h1>
             
-            <div class="citation">
-                <img src="images/papers/nnsight.png" alt="nnsight-paper">
-                <!-- <img src="images/papers/ndif_design.png" alt="nnsight-paper"> -->
-                 <!-- <img src="images/papers/ndif-logo.png" alt="nnsight-paper"> -->
-                <a href="https://arxiv.org/pdf/2407.14561">NNsight and NDIF: Democratizing Access to Open-Weight Foundation Model Internals.</a>
-                Jaden Fiotto-Kaufman<sup>*</sup>, Alexander R. Loftus<sup>*</sup>, <b>Eric Todd</b>, Jannik Brinkmann, Koyena Pal, Dmitrii Troitskii, Michael Ripa, Adam Belfki, Can Rager, Caden Juang, Aaron Mueller, Samuel Marks, Arnab Sen Sharma, Francesca Lucchetti, Nikhil Prakash, Carla Brodley, Arjun Guha, Jonathan Bell, Byron C. Wallace, David Bau. <em>Proceedings of the 2025 International Conference on Learning Representations.</em> (ICLR 2025)
-                    <div class="button-container">
-                        <button class="abstract-toggle">Abstract</button>
-                        <a href="https://ndif.us"><button>Project Website</button></a>
-                        <a href="https://arxiv.org/abs/2407.14561"><button>arXiv</button></a>
-                        <a href="https://openreview.net/forum?id=MxbEiFRf39"><button>OpenReview</button></a>
-                        <div class="abstract-container">
-                            <p> We introduce NNsight and NDIF, technologies that work in tandem to enable
-                                scientific study of very large neural networks. NNsight is an open-source system
-                                that extends PyTorch to introduce deferred remote execution. NDIF is a scalable
-                                inference service that executes NNsight requests, allowing users to share GPU
-                                resources and pretrained models. These technologies are enabled by the intervention graph, 
-                                an architecture developed to decouple experiment design from model
-                                runtime. Together, this framework provides transparent and efficient access to
-                                the internals of deep neural networks such as very large language models (LLMs)
-                                without imposing the cost or complexity of hosting customized models individually.
-                                We conduct a quantitative survey of the machine learning literature that reveals
-                                a growing gap in the study of the internals of large-scale AI. We demonstrate
-                                the design and use of our framework to address this gap by enabling a range of
-                                research methods on huge models. Finally, we conduct benchmarks to compare
-                                performance with previous approaches. Code, documentation, and tutorials are
-                                available at <a href="https://nnsight.net/">https://nnsight.net/</a>.</p>
-                        </div>
-                    </div>
             </div>
-        
-            <div class="citation">
-                <img src="images/papers/fv-2.png" alt="fv-paper">
-                <a href="https://arxiv.org/pdf/2310.15213">Function Vectors in Large Language Models.</a><br>
-                <b>Eric Todd</b>, Millicent L. Li, Arnab Sen Sharma, Aaron Mueller, Byron C. Wallace, David Bau. <em>Proceedings of the 2024 International Conference on Learning Representations.</em> (ICLR 2024)
-                    <div class="button-container">
-                        <button class="abstract-toggle">Abstract</button>
-                        <a href="https://functions.baulab.info"><button>Project Website</button></a>
-                        <a href="https://arxiv.org/abs/2310.15213"><button>arXiv</button></a>
-                        <a href="https://openreview.net/forum?id=AwyxtyMwaG"><button>OpenReview</button></a>
-                        <div class="abstract-container">
-                            <p>We report the presence of a simple neural mechanism that represents an input-output function as a vector 
-                                within autoregressive transformer language models (LMs). Using causal mediation analysis on a diverse range 
-                                of in-context-learning (ICL) tasks, we find that a small number attention heads transport a compact representation of the demonstrated task, which we call a function vector (FV). FVs are robust to changes in context, i.e., 
-                                they trigger execution of the task on inputs such as zero-shot and natural text settings that do not resemble the ICL contexts 
-                                from which they are collected. We test FVs across a range of tasks, models, and layers and find strong causal effects across settings in middle layers.
-                                We investigate the internal structure of FVs and find while that they often contain information that encodes the output space of the function, 
-                                this information alone is not sufficient to reconstruct an FV. Finally, we test semantic vector composition in FVs,
-                                and find that to some extent they can be summed to create vectors that trigger new complex tasks. Our findings show that compact, 
-                                causal internal vector representations of function abstractions can be explicitly extracted from LLMs.</p>
-                        </div>
-                    </div>
-            </div> 
           </section>
 
           <hr>
@@ -216,7 +234,3 @@
 
 </body>
 </html>
-
-
-
-

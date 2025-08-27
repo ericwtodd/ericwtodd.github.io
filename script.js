@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Update last modified date
-  const lastUpdated = "June 16, 2025"; // Change this date when you update your site
+  const lastUpdated = "September 1, 2025";
   document.querySelectorAll('.last-updated').forEach(el => {
     el.textContent = lastUpdated;
   });
