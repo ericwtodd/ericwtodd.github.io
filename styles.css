@@ -292,6 +292,12 @@ font-size: 16px;
     padding: 0 15px;
     transition: max-height 0.3s ease-out, padding 0.3s step-end;
   }
+
+  /* Add this new rule for scrollable content */
+  .year-content:not(.collapsed) {
+      max-height: 500px; /* Adjust this value to your preferred height */
+      overflow-y: auto; /* Enables vertical scrolling */
+  }
   
   .news-group {
     margin-bottom: 15px;
