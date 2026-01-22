@@ -179,21 +179,23 @@
             </section>
 
             <hr>
-            
-            <section id="preprints">
-            <h2>Preprints and In Submission</h2>
 
-                <div class="citation">
+            <section id="journal-articles">
+                <h2>Journal Articles</h2>
+            
+
+            <div class="citation">
                     <a href="https://arxiv.org/abs/2501.16496" target="_blank">Open Problems in Mechanistic Interpretability</a> <br>
                     Lee Sharkey, Bilal Chughtai, Joshua Batson, Jack Lindsey, Jeff Wu, Lucius Bushnaq, Nicholas Goldowsky-Dill, Stefan Heimersheim, 
                     Alejandro Ortega, Joseph Bloom, Stella Biderman, Adria Garriga-Alonso, Arthur Conmy, Neel Nanda, Jessica Rumbelow, Martin Wattenberg, 
                     Nandi Schoots, Joseph Miller, Eric J. Michaud, Stephen Casper, Max Tegmark, William Saunders, David Bau, <b>Eric Todd</b>, Atticus Geiger, 
                     Mor Geva, Jesse Hoogland, Daniel Murfet, Tom McGrath. <br>
-                    arxiv 2025.
+                    <em>Transactions on Machine Learning Research</em> (TMLR), 2025.
                     <div class="publication-content">
                         <div class="button-container">
                             <button class="abstract-toggle">Abstract</button> 
                             <a href="https://arxiv.org/pdf/2501.16496" target="_blank"><button>PDF</button></a>
+                            <a href="https://openreview.net/forum?id=91H76m9Z94" target="_blank"><button>OpenReview</button></a>
                             <div class="abstract-container">
                                 <p> Mechanistic interpretability aims to understand the computational mechanisms underlying neural networks' capabilities
                                     in order to accomplish concrete scientific and engineering goals. Progress in this field thus promises to provide greater assurance
@@ -208,14 +210,15 @@
                 </div>
 
                 <div class="citation">
-                    <a href="https://arxiv.org/abs/2408.01416" target="_blank">The Quest for the Right Mediator: A History, Survey, and Theoretical Grounding of Causal Interpretability</a> <br>
+                    <a href="https://arxiv.org/abs/2408.01416" target="_blank">The Quest for the Right Mediator: Surveying Mechanistic Interpretability for NLP Through the Lens of Causal Mediation Analysis</a> <br>
                     Aaron Mueller, Jannik Brinkmann, Millicent Li, Samuel Marks, Koyena Pal, Nikhil Prakash, Can Rager, Aruna Sankaranarayanan, Arnab Sen Sharma, Jiuding Sun, <b>Eric Todd</b>, David Bau, Yonatan Belinkov. <br>
-                    arxiv 2024.
+                    <em>Computational Linguistics</em>, 2025.
                     <div class="publication-content">
                         <div class="button-container">
                             <button class="abstract-toggle">Abstract</button>
                             <!-- <a href=""><button>Project Website</button></a> -->
                             <a href="https://arxiv.org/pdf/2408.01416" target="_blank"><button>PDF</button></a>
+                            <a href="https://doi.org/10.1162/COLI.a.572" target="_blank"><button>Computational Linguistics</button></a>
                             <div class="abstract-container">
                                 <p> Interpretability provides a toolset for understanding how and why neural networks behave in certain ways. 
                                     However, there is little unity in the field: most studies employ ad-hoc evaluations and do not share theoretical foundations, 
@@ -233,6 +236,32 @@
                                 </div>
                             </div>
                         </div> 
+                </div>
+
+            </section>
+
+            <hr>
+            
+            <section id="preprints">
+            <h2>Preprints and In Submission</h2>
+
+                <div class="citation">
+                    <!-- <img src="images/papers/algebra-thumb.png" alt="algebra-paper"> -->
+                    <a href="https://arxiv.org/abs/2512.16902" target="_blank">In-Context Algebra</a><br>
+                    <b>Eric Todd</b>, Jannik Brinkmann, Rohit Gandikota, David Bau. arXiv, 2025.
+                        <div class="button-container">
+                            <button class="abstract-toggle">Abstract</button>
+                            <a href="https://algebra.baulab.info" target="_blank"><button>Project Website</button></a>
+                            <a href="https://arxiv.org/pdf/2512.16902" target="_blank"><button>PDF</button></a>
+                            <div class="abstract-container">
+                                <p>We investigate the mechanisms that arise when transformers are trained to solve arithmetic on sequences where tokens are variables whose meaning is determined only through their interactions.
+                                While prior work has found that transformers develop geometric embeddings that mirror algebraic structure, those previous findings emerge from settings where arithmetic-valued tokens have fixed meanings.
+                                We devise a new task in which the assignment of symbols to specific algebraic elements varies from one sequence to another.
+                                Despite this challenging setup, transformers achieve near-perfect accuracy on the task and even generalize to unseen groups.
+                                We develop targeted data distributions to create causal tests of a set of hypothesized mechanisms, and we isolate three mechanisms models consistently learn: commutative copying where a dedicated head copies answers, identity element recognition that distinguishes identity-containing facts, and closure-based cancellation that tracks group membership to constrain valid answers.
+                                Complementary to the geometric representations found in fixed-symbol settings, our findings show that models develop symbolic reasoning mechanisms when trained to reason in-context with variables whose meanings are not fixed.</p>
+                            </div>
+                        </div>
                 </div>
 
                 <!-- <div class="citation">

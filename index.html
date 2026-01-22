@@ -32,18 +32,18 @@
           <div class="social-links">
             <a href="mailto:todd.er@northeastern.edu"><i class="fas fa-envelope fa-lg"></i><span> Email</span></a>
             <a href="https://twitter.com/ericwtodd" target="_blank"><i class="fab fa-fw fa-twitter-square"></i><span> Twitter</span></a>
+            <a href="https://bsky.app/profile/ericwtodd.bsky.social" target="_blank"><img src="https://bsky.app/static/apple-touch-icon.png" alt="Bluesky" width="18" height="18"><span> Bluesky</span></a>
             <a href="https://github.com/ericwtodd" target="_blank"><i class="fab fa-github fa-lg"></i><span> Github</span></a>
             <a href="https://www.linkedin.com/in/eric-w-todd/" target="_blank"><i class="fab fa-fw fa-linkedin"></i><span> LinkedIn</span></a>
             <a href="https://scholar.google.com/citations?user=o12WPZEAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar" style="font-size:1.3rem"></i><span> Google Scholar</span></a>
-            <a href="https://bsky.app/profile/ericwtodd.bsky.social" target="_blank" style="display:inline-flex;align-items:center;gap:4px;"><img src="https://bsky.app/static/apple-touch-icon.png" alt="Bluesky" width="18" height="18"><span> Bluesky</span></a>
-            <!-- <a href="https://bsky.app/profile/ericwtodd.bsky.social" target="_blank"><i class="fa-brands fa-bluesky" style="font-size:1.3rem"></i><span> Bluesky</span></a> -->
           </div>
         </div>
 
         <div class="main-content">
           <section id="bio">
-            <h1>About Me</h1>
-            <p>Hi, my name is Eric Todd. I'm a fourth-year PhD student at Northeastern University advised by <a href="https://baulab.info/" target="_blank">Professor David Bau</a>. Prior to beginning my PhD, I studied <a href="https://acme.byu.edu/acme-mission" target="_blank">Applied and Computational Mathematics (ACME)</a> at Brigham Young University (BYU).</p>
+            <h1>Eric Todd</h1>
+            <p>Hello! I'm a fourth-year PhD student at Northeastern University advised by <a href="https://baulab.info/" target="_blank">David Bau</a>. Before my PhD, I studied <a href="https://acme.byu.edu/acme-mission" target="_blank">Applied and Computational Mathematics (ACME)</a> at Brigham Young University (BYU).</p>
+            <!-- <p></p> -->
             <p>I'm interested in understanding learned structure inside of large neural networks, and how their internal representations enable their impressive generalization capabilities.</p>
             <p>My research interests generally include machine learning, interpretability, and deep learning as a science. I'm particularly interested in research on in-context learning (ICL) and causal abstraction in neural networks.</p>
             <!-- <p>My long-term vision for interpretability research is that it will enable trustworthy understanding of large neural networks in terms of </p> -->
@@ -53,6 +53,25 @@
 
           <section id="selected-publications">
             <h1>Selected Publications</h1>
+
+            <div class="citation">
+                <img src="images/papers/algebra-thumb.png" alt="algebra-paper">
+                <a href="https://arxiv.org/abs/2512.16902" target="_blank">In-Context Algebra</a><br>
+                <b>Eric Todd</b>, Jannik Brinkmann, Rohit Gandikota, David Bau. arXiv, 2025.
+                    <div class="button-container">
+                        <button class="abstract-toggle">Abstract</button>
+                        <a href="https://algebra.baulab.info" target="_blank"><button>Project Website</button></a>
+                        <a href="https://arxiv.org/pdf/2512.16902" target="_blank"><button>PDF</button></a>
+                        <div class="abstract-container">
+                            <p>We investigate the mechanisms that arise when transformers are trained to solve arithmetic on sequences where tokens are variables whose meaning is determined only through their interactions.
+                               While prior work has found that transformers develop geometric embeddings that mirror algebraic structure, those previous findings emerge from settings where arithmetic-valued tokens have fixed meanings.
+                               We devise a new task in which the assignment of symbols to specific algebraic elements varies from one sequence to another.
+                               Despite this challenging setup, transformers achieve near-perfect accuracy on the task and even generalize to unseen groups.
+                               We develop targeted data distributions to create causal tests of a set of hypothesized mechanisms, and we isolate three mechanisms models consistently learn: commutative copying where a dedicated head copies answers, identity element recognition that distinguishes identity-containing facts, and closure-based cancellation that tracks group membership to constrain valid answers.
+                               Complementary to the geometric representations found in fixed-symbol settings, our findings show that models develop symbolic reasoning mechanisms when trained to reason in-context with variables whose meanings are not fixed.</p>
+                        </div>
+                    </div>
+            </div>
 
             <div class="citation">
                 <img src="images/papers/fv-2.png" alt="fv-paper">
@@ -78,10 +97,8 @@
                     </div>
             </div> 
             
-            <div class="citation">
+            <!-- <div class="citation">
                 <img src="images/papers/nnsight.png" alt="nnsight-paper">
-                <!-- <img src="images/papers/ndif_design.png" alt="nnsight-paper"> -->
-                 <!-- <img src="images/papers/ndif-logo.png" alt="nnsight-paper"> -->
                 <a href="https://arxiv.org/abs/2407.14561" target="_blank">NNsight and NDIF: Democratizing Access to Open-Weight Foundation Model Internals</a><br>
                 Jaden Fiotto-Kaufman<sup>*</sup>, Alexander R. Loftus<sup>*</sup>, <b>Eric Todd</b>, Jannik Brinkmann, Koyena Pal, Dmitrii Troitskii, Michael Ripa, Adam Belfki, Can Rager, Caden Juang, Aaron Mueller, Samuel Marks, Arnab Sen Sharma, Francesca Lucchetti, Nikhil Prakash, Carla Brodley, Arjun Guha, Jonathan Bell, Byron C. Wallace, David Bau.
                 <em>The Thirteenth International Conference on Learning Representations</em> (ICLR), 2025.
@@ -108,7 +125,7 @@
                                 available at <a href="https://nnsight.net/" target="_blank">https://nnsight.net/</a>.</p>
                         </div>
                     </div>
-            </div>
+            </div> -->
         
             
           </section>
@@ -119,12 +136,31 @@
             <h1>News</h1>
 
             <div class="news-collapsible">
+                <div class="year-section">
+                    <div class="year-header">
+                        <h3>2026</h3>
+                    </div>
+                    <div class="year-content">                        
+                        <div class="news-group">
+                            <h4>January 2026</h4>
+                            <div class="news-item"> In our new preprint, <a href="https://algebra.baulab.info">In-Context Algebra</a>, 
+                                we design an in-context learning setting where tokens have no fixed meaning, allowing us to study how context alone imparts meaning. 
+                                We find rich structure beyond fuzzy induction-style copying. [<a href="https://x.com/ericwtodd/status/2014369604232180026">Twitter</a>]</div>
+                        </div>
+                    </div>
+                </div>
+                
                 <!-- Each month is a collapsible section -->
                 <div class="year-section">
                     <div class="year-header">
                         <h3>2025</h3>
                     </div>
                     <div class="year-content">
+
+                        <!-- <div class="news-group">
+                            <h4>December 2025</h4>   
+                            <div class="news-item"> reprint! <a href="https://algebra.baulab.info">In-Context Algebra</a>. </div>
+                        </div> -->
 
                         <div class="news-group">
                             <h4>October 2025</h4>   
