@@ -28,19 +28,42 @@
 
     <div class="container">
         <div class="sidebar">
-            <img src="images/eric_profile.jpg" alt="Eric Todd" class="profile-pic">
-            <div class="social-links">
-              <a href="mailto:todd.er@northeastern.edu"><i class="fas fa-envelope fa-lg"></i><span> Email</span></a>
-              <a href="https://twitter.com/ericwtodd" target="_blank"><i class="fab fa-fw fa-twitter-square"></i><span> Twitter</span></a>
-              <a href="https://github.com/ericwtodd" target="_blank"><i class="fab fa-github fa-lg"></i><span> Github</span></a>
-              <a href="https://www.linkedin.com/in/eric-w-todd/" target="_blank"><i class="fab fa-fw fa-linkedin"></i><span> LinkedIn</span></a>
-              <a href="https://scholar.google.com/citations?user=o12WPZEAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar" style="font-size:1.3rem"></i><span> Google Scholar</span></a>
-            </div>
+          <img src="images/eric_profile.jpg" alt="Eric Todd" class="profile-pic">
+          <div class="social-links">
+            <a href="mailto:todd.er@northeastern.edu"><i class="fas fa-envelope fa-lg"></i><span> Email</span></a>
+            <a href="https://twitter.com/ericwtodd" target="_blank"><i class="fab fa-fw fa-twitter-square"></i><span> Twitter</span></a>
+            <a href="https://bsky.app/profile/ericwtodd.bsky.social" target="_blank"><img src="https://bsky.app/static/apple-touch-icon.png" alt="Bluesky" width="18" height="18"><span> Bluesky</span></a>
+            <a href="https://github.com/ericwtodd" target="_blank"><i class="fab fa-github fa-lg"></i><span> Github</span></a>
+            <a href="https://www.linkedin.com/in/eric-w-todd/" target="_blank"><i class="fab fa-fw fa-linkedin"></i><span> LinkedIn</span></a>
+            <a href="https://scholar.google.com/citations?user=o12WPZEAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar" style="font-size:1.3rem"></i><span> Google Scholar</span></a>
           </div>
+        </div>
 
         <div class="main-content">
             <section id="conference-publications">
                 <h2>Conference Publications</h2>
+
+                <div class="citation">
+                <a href="https://arxiv.org/abs/2512.16902" target="_blank">In-Context Algebra</a><br>
+                <b>Eric Todd</b>, Jannik Brinkmann, Rohit Gandikota, David Bau. <br>
+                <em>The Fourteenth International Conference on Learning Representations</em> (ICLR), 2026.
+                    <div class="publication-content">
+                        <div class="button-container">
+                            <button class="abstract-toggle">Abstract</button>
+                            <a href="https://algebra.baulab.info" target="_blank"><button>Project Website</button></a>
+                            <a href="https://arxiv.org/pdf/2512.16902" target="_blank"><button>PDF</button></a>
+                            <a href="https://openreview.net/forum?id=J2peqXPQbB" target="_blank"><button>OpenReview</button></a>
+                            <div class="abstract-container">
+                                <p>We investigate the mechanisms that arise when transformers are trained to solve arithmetic on sequences where tokens are variables whose meaning is determined only through their interactions.
+                                While prior work has found that transformers develop geometric embeddings that mirror algebraic structure, those previous findings emerge from settings where arithmetic-valued tokens have fixed meanings.
+                                We devise a new task in which the assignment of symbols to specific algebraic elements varies from one sequence to another.
+                                Despite this challenging setup, transformers achieve near-perfect accuracy on the task and even generalize to unseen groups.
+                                We develop targeted data distributions to create causal tests of a set of hypothesized mechanisms, and we isolate three mechanisms models consistently learn: commutative copying where a dedicated head copies answers, identity element recognition that distinguishes identity-containing facts, and closure-based cancellation that tracks group membership to constrain valid answers.
+                                Complementary to the geometric representations found in fixed-symbol settings, our findings show that models develop symbolic reasoning mechanisms when trained to reason in-context with variables whose meanings are not fixed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="citation">
                 <a href="https://arxiv.org/abs/2504.03022" target="_blank">The Dual-Route Model of Induction</a><br>
@@ -62,7 +85,7 @@
                             </div>
                         </div>
                     </div> 
-            </div>
+                </div>
 
                 <div class="citation">
                     <a href="https://arxiv.org/abs/2407.14561" target="_blank">NNsight and NDIF: Democratizing Access to Open-Weight Foundation Model Internals</a><br>
@@ -129,7 +152,7 @@
                         focused crowd involvement at recreational events</a> <br>
                     <b>Eric Todd</b>, Mylan R. Cook, Katrina Pedersen, David S. Woolworth, Brooks A. Butler, Xin Zhao,
                     Colt Liu, Kent L. Gee, Mark K. Transtrum, Sean Warnick. <br>
-                    <em>Proceedings of Meetings on Acoustics</em> <b>39</b> (1), 2019.
+                    <em>Proceedings of Meetings on Acoustics</em> <b>39</b>, 2019.
                     <div class="publication-content">
                         <div class="button-container">
                             <button class="abstract-toggle">Abstract</button>
@@ -154,7 +177,7 @@
                 <div class="citation">
                     <a href="https://pubs.aip.org/asa/poma/article/35/1/055006/997305/Classifying-crowd-behavior-at-collegiate" target="_blank">Classifying crowd behavior at collegiate basketball games using acoustic data.</a><br>
                     Brooks A. Butler, Katrina Pedersen, Mylan R. Cook, Spencer G. Wadsworth, <b>Eric Todd</b>, Dallen Stark, Kent L. Gee, Mark K. Transtrum, Sean Warnick. <br>
-                    <em>Proceedings of Meetings on Acoustics</em> <b>35</b> (1), 2018.
+                    <em>Proceedings of Meetings on Acoustics</em> <b>35</b>, 2018.
                     <div class="publication-content">
                         <div class="button-container">
                             <button class="abstract-toggle">Abstract</button>
@@ -242,27 +265,9 @@
 
             <hr>
             
-            <section id="preprints">
-            <h2>Preprints and In Submission</h2>
+            <!-- <section id="preprints">
+            <h2>Preprints and In Submission</h2> -->
 
-                <div class="citation">
-                    <!-- <img src="images/papers/algebra-thumb.png" alt="algebra-paper"> -->
-                    <a href="https://arxiv.org/abs/2512.16902" target="_blank">In-Context Algebra</a><br>
-                    <b>Eric Todd</b>, Jannik Brinkmann, Rohit Gandikota, David Bau. arXiv, 2025.
-                        <div class="button-container">
-                            <button class="abstract-toggle">Abstract</button>
-                            <a href="https://algebra.baulab.info" target="_blank"><button>Project Website</button></a>
-                            <a href="https://arxiv.org/pdf/2512.16902" target="_blank"><button>PDF</button></a>
-                            <div class="abstract-container">
-                                <p>We investigate the mechanisms that arise when transformers are trained to solve arithmetic on sequences where tokens are variables whose meaning is determined only through their interactions.
-                                While prior work has found that transformers develop geometric embeddings that mirror algebraic structure, those previous findings emerge from settings where arithmetic-valued tokens have fixed meanings.
-                                We devise a new task in which the assignment of symbols to specific algebraic elements varies from one sequence to another.
-                                Despite this challenging setup, transformers achieve near-perfect accuracy on the task and even generalize to unseen groups.
-                                We develop targeted data distributions to create causal tests of a set of hypothesized mechanisms, and we isolate three mechanisms models consistently learn: commutative copying where a dedicated head copies answers, identity element recognition that distinguishes identity-containing facts, and closure-based cancellation that tracks group membership to constrain valid answers.
-                                Complementary to the geometric representations found in fixed-symbol settings, our findings show that models develop symbolic reasoning mechanisms when trained to reason in-context with variables whose meanings are not fixed.</p>
-                            </div>
-                        </div>
-                </div>
 
                 <!-- <div class="citation">
                     AUTHORS HERE <a href="">TITLE HERE</a> YEAR.
@@ -278,7 +283,7 @@
                         </div> 
                 </div> -->
 
-            </section>
+            <!-- </section> -->
 
             <hr>
             <footer>
