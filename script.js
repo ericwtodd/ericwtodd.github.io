@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const lastUpdated = "March 31, 2025";
+  const lastUpdated = "March 31, 2026";
   document.querySelectorAll('.last-updated').forEach(el => {
     el.textContent = lastUpdated;
   });
